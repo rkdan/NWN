@@ -8,7 +8,7 @@ int WINAPI wWinMain( HINSTANCE hInst,HINSTANCE,LPWSTR pArgs,INT )
 	bool show = true;
 	MainWindow wnd( hInst,pArgs );
 	Simulation theSim( wnd );
-	//theGame.UpdateModel();
+	theSim.UpdateModel();
 	if (show)
 	{
 		while (wnd.ProcessMessage())

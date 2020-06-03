@@ -22,4 +22,10 @@ public:
 	int height;
 	int nWires;
 	vector<Wire> Network = vector<Wire>(nWires);
+	vector<int> AdjMat = vector<int>(nWires * nWires);
+	void MakeAdjMat();
+private:
+	bool onSegment(Vec2D p, Vec2D q, Vec2D r);
+	int orientation(Vec2D p, Vec2D q, Vec2D r);
+	bool doIntersect(Vec2D p0, Vec2D q0, Vec2D p1, Vec2D q1);
 };

@@ -11,6 +11,7 @@ Simulation::Simulation(MainWindow& wnd)
 
 void Simulation::UpdateModel()
 {
+    Network.MakeAdjMat();
 }
 
 void Simulation::ComposeFrame()
